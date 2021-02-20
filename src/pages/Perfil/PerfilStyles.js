@@ -1,24 +1,67 @@
 import { StyleSheet } from "react-native";
+import Constants from "expo-constants";
+import { Dimensions } from "react-native";
+const width = Dimensions.get("window").width; //full width
+const height = Dimensions.get("window").height; //full height
+
 const styles = StyleSheet.create({
-  container2: {
+  containerMain: {
+    flex: 1,
     flexDirection: "column",
     alignItems: "center",
-    justifyContent: "center",
-    
-    padding: 8,
-    marginTop: 50,
-    borderColor:"#03a9f4",
-    borderWidth:1
+    color:'white'
   },
+  Text: {
+    fontWeight: "bold",
+    color:"white"
+  },
+  Text3:{
+      color:'white'
+  },
+  Text2: {
+    
+    fontSize:17
+  },
+
+  containerBody: {
+    borderBottomRightRadius: 10,
+    borderBottomLeftRadius: 10,
+    width: width,
+    height: "97%",
+    alignItems:"center",
+  },
+  containerInfo:{
+    
+    width: width - 20,
+    height: "60%",
+    borderRadius:10,
+    marginTop:20,
+    padding:20,
+    
+
+  },
+
+  containerProfile: {
+    width,
+    height: "35%",
+    alignItems: "center",
+    justifyContent: "center",
+    borderBottomRightRadius: 27,
+    borderBottomLeftRadius: 27,
+
+    backgroundColor: "#5d99c6",
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 5},
+    shadowOpacity: 0.8,
+    shadowRadius: 5,  
+    elevation: 10
+  },
+
   avatar: {
-    width: 150,
-    height: 150,
-    margin: 8,
+    width: 80,
+    height: 80,
   },
   campos: {
-    
-    borderColor:"#7986cb",
-    borderWidth:1,
     padding: 10,
     marginTop: 50,
   },
