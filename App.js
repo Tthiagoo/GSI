@@ -7,7 +7,7 @@ import HomeScreen from './src/pages/HomePage/HomePage.js'
 import Perfil from './src/pages/Perfil/Perfil.js'
 export default function App() {
   return (
-    <ApplicationProvider {...eva} theme={eva.light}>
+    <ApplicationProvider {...eva} theme={eva.dark}>
     <Perfil />
   </ApplicationProvider>
   );
